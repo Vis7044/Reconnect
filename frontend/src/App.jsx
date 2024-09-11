@@ -8,6 +8,7 @@ function App() {
   return (
     <>
         <p className='text-4xl bg-red-400'>Hello</p>
+        <h1>DotBot</h1>
     </>
   )
 }
