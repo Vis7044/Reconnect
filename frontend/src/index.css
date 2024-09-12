@@ -12,9 +12,6 @@
     font-style: normal;
 }
 
-.hidescroll {
-    -webkit-overflow-scrolling: touch;
-}
 
 .hidescroll { 
      scrollbar-width: none; /* For Firefox */

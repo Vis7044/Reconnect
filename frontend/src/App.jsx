@@ -8,12 +8,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="h-screen flex">
+    <div className="h-screen">
       <Sidebar/>
       <Outlet/>
-      <div className='w-80 h-full fixed right-0 bg-white'>
-          aljflksj
-      </div>
+      
     </div>
   );
 }

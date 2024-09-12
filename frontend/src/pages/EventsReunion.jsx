@@ -2,7 +2,7 @@ import React from 'react'
 
 const EventsReunion = () => {
   return (
-    <div className='bg-[#F0F2F5] w-full'>
+    <div className='md:ml-60 ml-0'>
       Events Reunion
     </div>
   )

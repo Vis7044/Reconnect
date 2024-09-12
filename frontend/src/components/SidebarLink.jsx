@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const SidebarLink = ({splitPathName,link,name,path,icon}) => {
-    console.log(splitPathName,path)
   return (
     <Link
           className={`${
