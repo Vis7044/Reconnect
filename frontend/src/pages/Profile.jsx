@@ -1,11 +1,11 @@
 import React from 'react'
 
-const JobPortal = () => {
+const Profile = () => {
   return (
     <div className='md:ml-60 ml-0'>
-      JobPortal
+      Profile
     </div>
   )
 }
 
-export default JobPortal
+export default Profile
