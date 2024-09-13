@@ -6,10 +6,12 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <div className="h-screen">
-      {sidebarOpen && <Sidebar />}
+      {sidebarOpen && <Sidebar/>}
       <Outlet/>
+      
     </div>
   );
 }

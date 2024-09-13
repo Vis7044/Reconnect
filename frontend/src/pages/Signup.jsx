@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Signup = () => {
   return (
     <div className="h-screen flex items-start justify-center">
-      <div className="mt-48 bg-[#F3F4F6] lg:w-[1000px] md:w-[760px] sm:w-[70%] w-[70%]  rounded-md sm:grid sm:grid-cols-2 block">
+      <div className="mt-48 bg-[#F3F4F6] lg:w-[900px] md:w-[700px] sm:w-[80%] w-[80%]  rounded-md sm:grid sm:grid-cols-2 block">
         <div className="sm:block hidden">
           <img src={signup}  alt="Post Image" className="w-full h-full object-cover border" />
         </div>
