@@ -5,13 +5,11 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="h-screen">
-      <Sidebar/>
+      {sidebarOpen && <Sidebar />}
       <Outlet/>
-      
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { GiReceiveMoney } from 'react-icons/gi';
 import { IoChatbubbleEllipsesSharp } from 'react-icons/io5';
 import { MdEvent } from 'react-icons/md';
 import { FaFileAlt } from 'react-icons/fa';
+
 import { CgProfile,CgLogOut } from "react-icons/cg";
 
 const sidebarLinks = [
@@ -16,7 +17,7 @@ const sidebarLinks = [
     path: 'donation',
     icon: <GiReceiveMoney />,
   },
-  {
+  {   
     name: 'Network Hub',
     link: '/network-hub',
     path: 'network-hub',
@@ -36,15 +37,17 @@ const sidebarLinks = [
   },
 ];
 
+
 const Sidebar = () => {
 
   const location = useLocation();
+  console.log(sidebarLinks)
   const { pathname } = location;
   const splitPathName = pathname.split('/');
 
   const navigate = useNavigate();
   return (
-    <div className="h-full bg-[#1B2430] w-60 text-white md:flex hidden border-r-slate-950 fixed flex-col justify-between">
+    <div className={`h-full bg-[#1B2430] w-60 text-white md:flex hidden border-r-slate-950 fixed flex-col justify-between`}>
       <div className="pt-10 flex flex-col p-3 gap-2">
         {sidebarLinks.map((link, index) => {
           return (
