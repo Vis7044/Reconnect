@@ -27,4 +27,9 @@ export const RegisterFields = [
         type: 'password',
         placeholder: 'Confirm Password',
     },
+    {
+        name: 'College Name',
+        type: 'text',
+        placeholder: 'College Name',
+    }
 ];

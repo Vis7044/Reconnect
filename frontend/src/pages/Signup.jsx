@@ -21,7 +21,15 @@ const Signup = () => {
                 <Input type={field.type} placeholder={field.placeholder} />
               </div>
             ))}
-            <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 mx-auto">Login</button>
+            <div className='flex flex-col items-center'>
+              <select className='border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500'>
+                <option selected>Select Document</option>
+                <option>Marksheet</option>
+                <option>Migration Certificate</option>
+                <option>College Id Card</option>
+              </select>
+            </div>
+            <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 mx-auto">Signup</button>
             <div className='max-w-fit mx-auto'>Already Have an Account? <Link to={'/login'} className='underline text-blue-600'>Login</Link></div>
           </form>
         </div>
