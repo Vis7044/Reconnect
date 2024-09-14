@@ -21,6 +21,7 @@ const Login = () => {
                 <Input type={field.type} placeholder={field.placeholder} />
               </div>
             ))}
+            
             <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 mx-auto">Login</button>
             <div className='max-w-fit mx-auto'>Don't Have an Account? <Link to={'/sign-up'} className='underline text-blue-600'>Signup</Link></div>
           </form>
