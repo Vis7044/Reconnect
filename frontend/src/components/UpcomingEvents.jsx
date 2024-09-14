@@ -61,7 +61,7 @@ const UpcomingEvents = () => {
   return (
     <div className="m-8 bg-white rounded-2xl h-[350px] flex flex-col w-[360px]">
       <div className='flex justify-between p-1 items-center'>
-      <div className="m-3 text-3xl text-slate-500">Upcoming Events</div>
+      <div className="m-3 text-3xl font-semibold text-gray-500">Upcoming Events</div>
       <div className='flex items-center '>
         <GrFormPrevious className='text-3xl ml-2 cursor-pointer' onClick={prevSlide} />
         <MdOutlineNavigateNext className='text-3xl cursor-pointer' onClick={nextSlide} />

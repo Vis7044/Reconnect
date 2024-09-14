@@ -10,18 +10,18 @@ const EventCard = (props) => {
         <img
           src={props.event.image}   
           alt="Event 1"
-          className="h-full w-full object-contain rounded-md border"
+          className="h-full w-full object-cover rounded-md border"
         />
       </div>
       <div className="flex items-center justify-start w-full">
-        <div className='flex gap-1 items-center'><FaLocationDot className="text-xl"/> {props.event.location}</div>
-        <div className='ml-10 flex gap-1 items-center'><MdAccessTimeFilled className="text-xl"/> {props.event.date}</div>
+        <div className='flex gap-1 items-center'><FaLocationDot className="text-xl"/> <span>{props.event.location}</span></div>
+        <div className='ml-10 flex gap-1 items-center'><MdAccessTimeFilled className="text-xl"/> <span>{props.event.date}</span></div>
       </div>
       <div className='text-start w-full text-slate-500 font-semibold text-3xl'>
         {props.event.title}
       </div>
-      <div className='w-full text-end mb-4 text-white'>
-      <button className='rounded-full bg-slate-500 p-2 text-l'>Register</button>
+      <div className='w-full text-end text-white'>
+       <button className='rounded-full bg-slate-500 p-2 text-l'>Register</button>
       </div>
     </div>
   );
