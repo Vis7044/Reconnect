@@ -6,7 +6,7 @@ import login from '../assets/images/login.jpg';
 import { Link } from 'react-router-dom';
 import { MdCloudUpload } from 'react-icons/md';
 import { IoIosCheckmarkCircleOutline } from 'react-icons/io';
-import Modal from '../components/MOdal';
+import Modal from '../components/Modal';
 
 const Signup = () => {
   const inputref = useRef(null);
