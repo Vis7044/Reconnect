@@ -7,7 +7,7 @@ import { FaCommentDots } from 'react-icons/fa';
 
 const Card = () => {
   return (
-    <div className=" flex items-center justify-center">
+    <div className="m-3 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md">
         {/* <!-- User Info with Three-Dot Menu --> */}
         <div className="flex items-center justify-between mb-4">
@@ -54,16 +54,16 @@ const Card = () => {
           <div className="flex items-center space-x-2">
             <button className="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
               <FaHeart />
-              <span>42 Likes</span>
+              <span>42</span>
             </button>
           </div>
           <button className="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
             <FaCommentDots />
-            <span>3 Comment</span>
+            <span>3</span>
           </button>
           <button className="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
             <FaShare />
-            <span>1 share</span>
+            <span>1</span>
           </button>
         </div>
         <hr className="mt-2 mb-2" />
