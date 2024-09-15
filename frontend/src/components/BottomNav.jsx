@@ -7,6 +7,7 @@ import { MdEvent } from 'react-icons/md';
 import { FaFileAlt } from 'react-icons/fa';
 import BottomNavLink from './BottomNavLink';
 
+
 const sidebarLinks = [
   { name: 'Home', link: '/', path: '', icon: <MdHomeFilled /> },
   {
