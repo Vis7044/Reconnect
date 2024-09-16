@@ -17,19 +17,19 @@ const sidebarLinks = [
     icon: <GiReceiveMoney />,
   },
   {
-    name: 'Network Hub',
+    name: 'Network',
     link: '/network-hub',
     path: 'network-hub',
     icon: <IoChatbubbleEllipsesSharp />,
   },
   {
-    name: 'Job Portal',
+    name: 'Job',
     link: '/job-portal',
     path: 'job-portal',
     icon: <FaFileAlt />,
   },
   {
-    name: 'Events & Reunions',
+    name: 'Events',
     link: '/events-reunions',
     path: 'events-reunions',
     icon: <MdEvent />,
@@ -43,7 +43,7 @@ const BottomNav = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="h-[50px]  bg-[#1B2430] w-full text-white md:hidden flex border-r-slate-950 fixed flex-col justify-between">
+    <div className="h-[50px]  bg-[#1B2430] w-full text-white md:hidden flex border-r-slate-950  flex-col justify-between">
       <div className="flex justify-between">
         {sidebarLinks.map((link, index) => {
           return (
