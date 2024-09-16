@@ -43,7 +43,7 @@ const BottomNav = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="h-[50px]  bg-[#1B2430] w-full text-white md:hidden flex border-r-slate-950  flex-col justify-between">
+    <div className="bg-[#1B2430] w-full text-white md:hidden flex border-r-slate-950  flex-col justify-between">
       <div className="flex justify-between">
         {sidebarLinks.map((link, index) => {
           return (
