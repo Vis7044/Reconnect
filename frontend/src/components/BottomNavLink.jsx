@@ -10,10 +10,10 @@ const BottomNavLink = ({splitPathName,name,link,path,icon}) => {
           <div className='flex flex-col items-center gap-1'>
           <div className={`${
             splitPathName === path && 'text-blue-300'
-          } text-xl text-white`}>{icon}</div>
+          } text-xl`}>{icon}</div>
           <div className={`${
             splitPathName === path && 'text-blue-300'
-          } text-xs text-white`}>{name}</div>
+          } text-xs`}>{name}</div>
           </div>
         </Link>
   )
