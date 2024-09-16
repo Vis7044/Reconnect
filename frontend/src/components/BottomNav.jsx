@@ -1,32 +1,27 @@
-import React, { useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React from 'react';
+import {  useLocation, useNavigate } from 'react-router-dom';
 import { MdHomeFilled } from 'react-icons/md';
 import { GiReceiveMoney } from 'react-icons/gi';
-import { IoChatbubbleEllipsesSharp } from 'react-icons/io5';
 import { MdEvent } from 'react-icons/md';
-import { FaFileAlt } from 'react-icons/fa';
 import BottomNavLink from './BottomNavLink';
+import { CgProfile } from "react-icons/cg";
+import { BsPeopleFill } from "react-icons/bs";
+import { IoBagAdd } from "react-icons/io5";
 
 
 const sidebarLinks = [
   { name: 'Home', link: '/', path: '', icon: <MdHomeFilled /> },
   {
-    name: 'Donation',
-    link: '/donation',
-    path: 'donation',
-    icon: <GiReceiveMoney />,
-  },
-  {
     name: 'Network',
     link: '/network-hub',
     path: 'network-hub',
-    icon: <IoChatbubbleEllipsesSharp />,
+    icon: <BsPeopleFill />,
   },
   {
     name: 'Job',
     link: '/job-portal',
     path: 'job-portal',
-    icon: <FaFileAlt />,
+    icon: <IoBagAdd />,
   },
   {
     name: 'Events',
@@ -34,6 +29,18 @@ const sidebarLinks = [
     path: 'events-reunions',
     icon: <MdEvent />,
   },
+  {
+    name: 'Donation',
+    link: '/donation',
+    path: 'donation',
+    icon: <GiReceiveMoney />,
+  },
+  {
+    name: 'Profile',
+    link: '/profile',
+    path: 'profile',
+    icon: <CgProfile/>
+  }
 ];
 
 const BottomNav = () => {

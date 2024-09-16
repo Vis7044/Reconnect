@@ -3,31 +3,25 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SidebarLink from './SidebarLink';
 import { MdHomeFilled } from 'react-icons/md';
 import { GiReceiveMoney } from 'react-icons/gi';
-import { IoChatbubbleEllipsesSharp } from 'react-icons/io5';
 import { MdEvent } from 'react-icons/md';
-import { FaFileAlt } from 'react-icons/fa';
+import { BsPeopleFill } from "react-icons/bs";
+import { IoBagAdd } from "react-icons/io5";
 
 import { CgProfile,CgLogOut } from "react-icons/cg";
 
 const sidebarLinks = [
   { name: 'Home', link: '/', path: '', icon: <MdHomeFilled /> },
-  {
-    name: 'Donation',
-    link: '/donation',
-    path: 'donation',
-    icon: <GiReceiveMoney />,
-  },
   {   
     name: 'Network Hub',
     link: '/network-hub',
     path: 'network-hub',
-    icon: <IoChatbubbleEllipsesSharp />,
+    icon: < BsPeopleFill/>,
   },
   {
     name: 'Job Portal',
     link: '/job-portal',
     path: 'job-portal',
-    icon: <FaFileAlt />,
+    icon: <IoBagAdd />,
   },
   {
     name: 'Events & Reunions',
@@ -35,6 +29,13 @@ const sidebarLinks = [
     path: 'events-reunions',
     icon: <MdEvent />,
   },
+  {
+    name: 'Donation',
+    link: '/donation',
+    path: 'donation',
+    icon: <GiReceiveMoney />,
+  },
+  
 ];
 
 
@@ -65,7 +66,7 @@ const Sidebar = () => {
         <Link
           className={`${
             splitPathName[0] === 'profile' && 'bg-blue-500 rounded ml-2 p-1'
-          } hover:bg-blue-300 ml-2 p-1 rounded transition duration-200 flex items-center`}
+          } hover:bg-blue-300 gap-1 ml-2 p-1 rounded transition duration-200 flex items-center`}
           to={'/profile'}
         >
           <div className='text-xl text-white'><CgProfile/></div>
@@ -74,7 +75,7 @@ const Sidebar = () => {
         <button
           className={`${
             splitPathName[0] === 'logout' && 'bg-blue-500 rounded ml-2 p-1'
-          } hover:bg-blue-300 ml-2 p-1 rounded transition duration-200 flex items-center`}
+          } hover:bg-blue-300 ml-2 p-1 rounded transition duration-200 flex items-center gap-1`}
           onClick={()=> {
             navigate('/login')
           }}
