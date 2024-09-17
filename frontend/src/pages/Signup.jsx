@@ -32,6 +32,11 @@ const Signup = () => {
     setTermAccepted(!termAccepted);
     closeModal(true);
   };
+
+  const handleSubmit = () => {
+    console.log('submit');
+  }
+
   return (
     <div className="h-screen flex items-start justify-center">
       <div className="mt-48 bg-[#F3F4F6] lg:w-[1000px] md:w-[700px] sm:w-[80%] w-[80%]  rounded-md sm:grid sm:grid-cols-5 block">
@@ -46,7 +51,7 @@ const Signup = () => {
           <div className="text-center mt-5 mb-2 font-semibold text-xl">
             Sign up
           </div>
-          <form className="flex gap-4 flex-col w-full">
+          <form className="flex gap-4 flex-col w-full" onSubmit={handleSubmit}>
             {RegisterFields.map((field, index) => (
               <div key={index} className="flex flex-col items-center">
                 <Input type={field.type} placeholder={field.placeholder} />
@@ -104,6 +109,7 @@ const Signup = () => {
             
             <button
               type="submit"
+              
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 mx-auto disabled:bg-gray-600"
               disabled={!termAccepted}
             >

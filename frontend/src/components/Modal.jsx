@@ -9,8 +9,8 @@ function Modal({ isOpen, onClose, title, children }) {
 
   return (
     // Modal backdrop
-    <div className="fixed inset-0 bg-opacity-50   flex justify-center items-center">
-      <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 overflow-auto max-h-screen hidescroll">
+    <div className="fixed top-0 inset-0 bg-opacity-50  flex justify-center items-center ">
+      <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 max-h-[100vh] overflow-y-scroll  hidescroll">
         {/* Modal Header */}
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-semibold">{title}</h2>
