@@ -7,23 +7,29 @@ import { Link } from 'react-router-dom';
 import { MdCloudUpload } from 'react-icons/md';
 import { IoIosCheckmarkCircleOutline } from 'react-icons/io';
 import Modal from '../components/Modal';
+import axios from 'axios';
 
 const Signup = () => {
   const inputref = useRef(null);
   const [show, setShow] = useState(false);
   const [termAccepted, setTermAccepted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [fileUrl, setFileUrl] = useState(null); // file state
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const handleFile = () => {
-    console.log('clicked');
+  const handleFile = async () => {
     inputref.current.click();
   };
 
-  const handleChange = (e) => {
-    console.log(e.target.files[0]);
+  const handleChange = async (e) => {
+    setFileUrl(null)
+    setShow(false)
+    const formData = new FormData();
+    formData.append('file', e.target.files[0]);
+    const res = await axios.post('http://localhost:5000/api/upload',formData);
+    setFileUrl(res.data.file);
     setShow(true);
   };
 
@@ -93,6 +99,9 @@ const Signup = () => {
                   show ? 'block' : 'hidden'
                 } `}
               />
+            <div>
+            {fileUrl && (<a className='cursor-pointer underline text-blue-400' href={fileUrl} target="_blank" rel="noopener noreferrer">view pdf</a>)}
+            </div>
             </div>
             <div>
               <p className="text-center text-gray-500">
