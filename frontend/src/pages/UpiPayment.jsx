@@ -3,7 +3,7 @@ import { QRCodeCanvas } from "qrcode.react";
 
 const UpiPayment = () => {
   const upiLink =
-    "upi://pay?pa=7439395585@ptsbi&pn=Sahil%20Sajar&am=1&cu=INR&tn=Payment%20for%20services";
+    "intent://pay?pa=7439395585@ptsbi&pn=Sahil%20Sajar&am=1&cu=INR&tn=Payment%20for%20services";
 
   const handlePayNow = () => {
     window.location.href = upiLink;
