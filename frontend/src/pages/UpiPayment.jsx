@@ -2,8 +2,8 @@ import React from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 const UpiPayment = () => {
-  const upiLink = "upi://pay?pa=7439395585@ptsbi&pn=Sahil%20Sajar&am=1&cu=INR&tn=Payment%20for%20services";
-  const intentLink = "intent://pay?pa=7439395585@ptsbi&pn=Sahil%20Sajar&am=1&cu=INR&tn=Payment%20for%20services#Intent;scheme=upi;package=com.phonepe.app;end";
+  const upiLink = "upi://pay?pa=8240347870@ybl&pn=Vishal%20Bhagat&am=1&cu=INR&tn=Payment%20for%20services";
+  const intentLink = "intent://pay?pa=8240347870@ybl&pn=Vishal%20Bhagat&am=1&cu=INR&tn=Payment%20for%20services#Intent;scheme=upi;package=com.phonepe.app;end";
 
   const handlePayNow = () => {
     // Try intent for Android
