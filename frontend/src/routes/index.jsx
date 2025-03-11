@@ -8,6 +8,7 @@ import EventsReunion from '../pages/EventsReunion';
 import Signup from '../pages/Signup';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
+import UpiPayment from '../pages/UpiPayment';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile',
                 element: <Profile/>
+            },
+            {
+                path: '*',
+                element: <UpiPayment/>
             }
         ]
     }

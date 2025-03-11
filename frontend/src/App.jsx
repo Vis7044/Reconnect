@@ -13,6 +13,7 @@ function App() {
       {sidebarOpen && <Sidebar/>}
       <Outlet/>
       <BottomNav/>
+      
     </div>
   );
 }
